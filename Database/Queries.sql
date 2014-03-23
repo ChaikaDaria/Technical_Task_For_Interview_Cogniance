@@ -1,4 +1,4 @@
-USE ProductDeveloping;
+USE ProductDevelopment;
 
 SELECT LastName, FirstName, Position
 FROM Persons
