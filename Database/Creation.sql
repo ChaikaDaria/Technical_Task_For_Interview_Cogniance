@@ -1,5 +1,3 @@
-START TRANSACTION;
-
 Create DATABASE ProductDevelopment;
 
 USE ProductDevelopment;
@@ -41,4 +39,3 @@ FOREIGN KEY (ReportedBy)
 FOREIGN KEY (AssignedTo) 
         REFERENCES Persons(id)
 );
-ROLLBACK;
