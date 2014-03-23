@@ -5,16 +5,16 @@ USE ProductDevelopment;
 CREATE TABLE Persons
 (
 id int NOT NULL AUTO_INCREMENT, 
-LastName nvarchar(255) NOT NULL,
-FirstName nvarchar(255),
-Position nvarchar(255) NOT NULL,
+LastName nvarchar(256) NOT NULL,
+FirstName nvarchar(256) NOT NULL,
+Position nvarchar(256) NOT NULL,
 PRIMARY KEY (id)
 );
 
 CREATE TABLE Products
 (
 id int NOT NULL AUTO_INCREMENT,
-Name nvarchar(255) NOT NULL,
+Name nvarchar(256) NOT NULL,
 Manager int NOT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (Manager) 
@@ -25,9 +25,9 @@ CREATE TABLE Bugs
 (
 id int NOT NULL AUTO_INCREMENT,
 ProductId int NOT NULL,
-Title nvarchar(255) NOT NULL,
+Title nvarchar(256) NOT NULL,
 Description Text,
-Status nvarchar(20) NOT NULL,
+Status nvarchar(256) NOT NULL,
 ReportedBy int NOT NULL,
 AssignedTo int,
 CreationDate Date NOT NULL,
